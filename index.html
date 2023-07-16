@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Job Freak</title>
+  </head>
+  <body>
+    <div id="left-panel">
+      <div class="logo">
+        <img
+          href="#"
+          onclick="showContent('home')"
+          src="logo (1).png"
+          alt="Job Freak"
+          width="220px"
+        />
+      </div>
+
+      <ul>
+        <li><a href="#" onclick="showContent('home')">Home</a></li>
+        <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+        <li>
+          <a href="#" onclick="showContent('information')">Information</a>
+        </li>
+        <li><a href="#" onclick="showContent('guide')">Guide</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <div id="home" class="content-div show">
+        <div class="home-box">
+          <h2 class="homeContent">
+            Get updates on <span style="color: greenyellow">Jobs</span> and
+            <span style="color: greenyellow">Internships</span> opportunity from
+            different companies.
+          </h2>
+          <img class="homeLogo" src="home.gif" alt="home" />
+        </div>
+        <h2 style="color: greenyellow; text-align: center; font-weight: 500">
+          We are here for you !!
+        </h2>
+        <p class="social">
+          <a
+            href="https://www.linkedin.com/in/suraj-maheshwari-909143235/"
+            target="_blank"
+          >
+            <img width="30" height="30" src="linkedin.png" alt=""
+          /></a>
+          <a
+            href="https://www.instagram.com/surajmaheshwari159/"
+            target="_blank"
+          >
+            <img width="30" height="30" src="instagram.png" alt="" />
+          </a>
+        </p>
+        <p>Copyright©️2023 All rights reserved</p>
+      </div>
+
+      <div id="contact" class="content-div hide">
+        <div class="contact-container">
+          <h1>Contact Us</h1>
+
+          <form id="contact-form" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+
+          <div
+            id="success-message"
+            class="success-message"
+            style="
+              display: none;
+              margin-top: 10px;
+              font-weight: 500;
+              color: black;
+            "
+          >
+            Message sent successfully!
+          </div>
+          <div id="error-message" class="error-message" style="display: none">
+            Oops! Something went wrong.
+          </div>
+        </div>
+      </div>
+
+      <div id="information" class="content-div hide">
+        <div class="container">
+          <h1>Information</h1>
+          <p>
+            Welcome to our website! Here, you will find useful information about
+            our services, products, and company.
+          </p>
+          <div class="cards">
+            <div class="section">
+              <h2 class="section-heading">Services</h2>
+              <p>
+                We offer a wide range of jobs and internships to meet the needs
+                of our clients. Whether you are looking for web design, graphic
+                design, digital marketing, or consulting services, we've got you
+                covered.
+              </p>
+            </div>
+
+            <div class="section">
+              <h2 class="section-heading">Company</h2>
+              <p>
+                Explore our collection of high-quality products. From software
+                solutions to physical goods, we strive to provide top-notch
+                products that meet the needs and expectations of our customers.
+              </p>
+            </div>
+
+            <div class="section">
+              <h2 class="section-heading">About Us</h2>
+              <p>
+                At Job Freak We Post daily updates on internships and jobs
+                postings !! Our aim is to empower the youth of our country and
+                make them Self-dependent. By providing them job/internships all
+                kinds of opportunities from various sectors, sharing knowledge
+                and make them competent enough so that they could excel in any
+                field.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-container1">
+            <h2 class="section-heading">Contact Us</h2>
+            <p>
+              For any inquiries or to get in touch with our team, please visit
+              our
+              <a
+                href="#"
+                onclick="showContent('contact')"
+                style="text-decoration: none; font-weight: 500"
+                >Contact</a
+              >
+              page.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="guide" class="content-div hide">
+        <div class="guide-container">
+          <h1>Guide</h1>
+
+          <h2>1. Register on our website</h2>
+          <p>
+            In order to access job and internship opportunities, you need to
+            create an account on our website. Registration is quick and easy,
+            requiring basic information such as your name, email, and password.
+          </p>
+
+          <h2>2. Explore job and internship listings</h2>
+          <p>
+            Our website offers a comprehensive database of job and internship
+            listings. Browse through the available opportunities and use filters
+            to refine your search based on location, industry, or specific
+            keywords.
+          </p>
+
+          <h2>3. Apply for desired positions</h2>
+          <p>
+            When you find a job or internship that matches your interests and
+            qualifications, follow the application instructions provided. Submit
+            your resume, cover letter, and any additional documents requested by
+            the employer.
+          </p>
+
+          <h2>4. Stay updated and track applications</h2>
+          <p>
+            Keep track of the positions you have applied for and monitor their
+            status. Our website provides tools to help you manage your
+            applications and stay updated on any changes or feedback from
+            employers.
+          </p>
+
+          <h2>5. Seek guidance and support</h2>
+          <p>
+            If you have any questions or need assistance, our support team is
+            here to help. Don't hesitate to reach out if you encounter any
+            issues or need guidance throughout your job search or internship
+            journey.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

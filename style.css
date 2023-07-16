@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* home page styling */
+
+#left-panel {
+  width: 18vw;
+  /* height: 100%; */
+  background: black;
+  padding: 20px;
+}
+
+.logo img {
+  position: relative;
+  left: 17px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#left-panel ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#left-panel ul li {
+  padding-bottom: 14px;
+  /* transition: background 0.3s; */
+}
+
+/* #left-panel ul li:hover {
+  background: lightgrey;
+} */
+
+#left-panel ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+  opacity: 60%;
+  position: relative;
+  transition: opacity 200ms;
+}
+
+#left-panel a:hover {
+  opacity: 100%;
+}
+
+#content {
+  width: 78vw;
+}
+
+#content div {
+  /* display: none; */
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.show {
+  animation-name: slideIn;
+}
+
+.hide {
+  animation-name: slideOut;
+}
+
+p {
+  line-height: 1.5;
+}
+
+#home .home-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeContent {
+  padding-left: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.homeLogo {
+  width: 480px;
+  padding-right: 10px;
+  position: relative;
+  top: 0;
+}
+
+.social img {
+  height: 20px;
+  width: 20px;
+}
+
+.social a {
+  text-decoration: none;
+  margin: 8px;
+}
+
+.social {
+  margin: 8px 0px;
+}
+
+/* contact Styling */
+
+/* #contact {
+} */
+
+.contact-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  /* align-items: center; */
+  margin: 60px 234px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  border: solid 1px #0000003e;
+  width: 30vw;
+  background: #f1f2f3;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000000;
+  opacity: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  padding-bottom: 5px;
+  padding-top: 10px;
+  font-weight: 500;
+}
+
+.form-group input,
+textarea {
+  padding: 8px 14px;
+  border: solid 1px #0000003e;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  resize: vertical;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.form-group button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #009dff;
+  border: solid 3px #0000003e;
+  cursor: pointer;
+}
+
+/* information styling */
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.section {
+  width: 250px;
+  padding: 0 20px;
+  border: solid 1px #0000003e;
+  background: coral;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #000000;
+  transition: transform 1.24s cubic-bezier(0.47, 0, 0, 1);
+}
+
+.section:hover {
+  transform: scale(1.1);
+}
+
+.section-heading {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* guide styling */
+
+.guide-container {
+  margin: 10px;
+}
+
+.guide-container h2 {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.guide-container p {
+  text-align: justify;
+  font-weight: 500;
+  padding: 0 10px;
+  font-size: 14px;
+}
